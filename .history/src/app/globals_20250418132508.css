@@ -3,14 +3,12 @@
 
 @import "tailwindcss";
 
-@import "swiper/css";
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
 
   --text-primary: #171717;
-  --text-secondary: #181c39;
+  --text-secondary: #e5e7eb;
   --text-light: #ffffff;
 }
 
@@ -23,6 +21,24 @@
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+
+    --text-primary: #ededed;
+    --text-secondary: #a3a3a3;
+    --text-light: #ffffff;
+  }
 }
 
 body {
@@ -41,10 +57,4 @@ body {
 
 .text-light {
   color: var(--text-light);
-}
-
-.white_outline {
-  text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff,
-    -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff,
-    -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
 }

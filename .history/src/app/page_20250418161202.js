@@ -25,18 +25,6 @@ export default function Home() {
           />
         </div>
       </section>
-      <section id="features" className="py-20 px-6 bg-[#f9f9f9] text-primary">
-        <div className="max-w-6xl mx-auto text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">The App</h2>
-          <p className="text-secondary max-w-2xl mx-auto">
-            Pawfect Diet isn’t just another feeding tracker. It’s a smart
-            assistant for pet owners, designed to provide personalised meal
-            plans through a sleek and friendly experience.
-          </p>
-        </div>
-
-        {/* Feature blocks go here */}
-      </section>
     </main>
   );
 }

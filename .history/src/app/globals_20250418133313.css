@@ -3,8 +3,6 @@
 
 @import "tailwindcss";
 
-@import "swiper/css";
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -44,7 +42,7 @@ body {
 }
 
 .white_outline {
-  text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff,
+  text-shadow: 6px 2px 0 #ffffff, 6px -2px 0 #ffffff, -2px 2px 0 #ffffff,
     -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff,
     -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
 }

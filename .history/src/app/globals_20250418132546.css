@@ -3,14 +3,12 @@
 
 @import "tailwindcss";
 
-@import "swiper/css";
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
 
   --text-primary: #171717;
-  --text-secondary: #181c39;
+  --text-secondary: #c0c5cf;
   --text-light: #ffffff;
 }
 
@@ -41,10 +39,4 @@ body {
 
 .text-light {
   color: var(--text-light);
-}
-
-.white_outline {
-  text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff,
-    -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff,
-    -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
 }
