@@ -12,6 +12,7 @@
   --text-primary: #171717;
   --text-secondary: #181c39;
   --text-light: #ffffff;
+  --text-secondary-light: #cfcfd1;
 }
 
 .chewy-font {
@@ -39,6 +40,10 @@ body {
   color: var(--text-secondary);
 }
 
+.text-secondary-light {
+  color: var(--text-secondary-light);
+}
+
 .text-light {
   color: var(--text-light);
 }
@@ -47,4 +52,17 @@ body {
   text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff,
     -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff,
     -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: scroll 20s linear infinite;
 }
