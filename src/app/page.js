@@ -3,6 +3,7 @@ import AboutSectionBlock from "@/components/AboutSectionBlock";
 import FeatureBlock from "@/components/FeatureBlock";
 import TechStack from "@/components/TechStack";
 import PreviewAndResources from "@/components/PreviewAndResources";
+import Footer from "@/components/Footer";
 import images from "@/utils/importImages";
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section id="features" className="py-20 px-6 bg-[#070c2c] text-primary">
+      <section id="features" className="py-20 px-6 bg-dark text-primary">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-5xl font-bold mb-4 white_outline text-secondary">
             The App
@@ -124,6 +125,7 @@ export default function Home() {
       </section>
       <TechStack />
       <PreviewAndResources />
+      <Footer />
     </main>
   );
 }

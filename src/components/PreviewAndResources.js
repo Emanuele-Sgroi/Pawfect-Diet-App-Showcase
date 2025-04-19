@@ -27,8 +27,8 @@ export default function PreviewAndResources() {
 
         {/* Backup Link */}
         <p className="text-secondary text-sm mb-12">
-          If the QR code doesn’t work, you can open the app directly from this
-          link:{" "}
+          If the QR code doesn&apos;t work, you can open the app directly from
+          this link:{" "}
           <a
             href="https://expo.dev/preview/update?message=Initial%20launch%20of%20Pawfect%20Diet%20with%20core%20features.&updateRuntimeVersion=1.0.0&createdAt=2024-03-29T18%3A10%3A20.077Z&slug=exp&projectId=7681adb9-3520-47a1-a9bb-b7451d9f62f2&group=8df0bb17-9238-425c-8f1d-ff030883e117"
             target="_blank"

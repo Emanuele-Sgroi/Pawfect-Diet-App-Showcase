@@ -7,6 +7,7 @@
 
 :root {
   --background: #ffffff;
+  --background-dark: #070c2c;
   --foreground: #171717;
 
   --text-primary: #171717;
@@ -48,21 +49,12 @@ body {
   color: var(--text-light);
 }
 
+.bg-dark {
+  background: var(--background-dark);
+}
+
 .white_outline {
   text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff,
     -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff,
     -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.animate-marquee {
-  animation: scroll 20s linear infinite;
 }
