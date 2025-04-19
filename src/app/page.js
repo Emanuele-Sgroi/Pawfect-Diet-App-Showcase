@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutSectionBlock from "@/components/AboutSectionBlock";
 import FeatureBlock from "@/components/FeatureBlock";
 import TechStack from "@/components/TechStack";
+import PreviewAndResources from "@/components/PreviewAndResources";
 import images from "@/utils/importImages";
 
 export default function Home() {
@@ -122,6 +123,7 @@ export default function Home() {
         </div>
       </section>
       <TechStack />
+      <PreviewAndResources />
     </main>
   );
 }

@@ -1,11 +1,12 @@
-import images from "@/utils/images"; // assuming qrCode is exported here
+import images from "@/utils/importImages";
+import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 
 export default function PreviewAndResources() {
   return (
     <section className="py-20 px-6 bg-[#f9f9f9] text-primary" id="resources">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4">Preview the App</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Preview the App</h2>
         <p className="text-secondary mb-6">
           If you have the <strong>Expo Go</strong> app installed on your phone,
           you can preview Pawfect Diet by scanning the QR code below. Depending
@@ -15,10 +16,12 @@ export default function PreviewAndResources() {
 
         {/* QR Code */}
         <div className="flex justify-center mb-4">
-          <img
-            src={images.qrCode.src}
+          <Image
+            src={images.preview}
             alt="QR code to preview the app"
-            className="w-[200px] h-[200px] rounded-xl shadow-md"
+            className="rounded-lg shadow-lg object-cover"
+            width={200}
+            height={200}
           />
         </div>
 
@@ -59,7 +62,7 @@ export default function PreviewAndResources() {
             Download Poster
           </a>
           <a
-            href="https://github.com/your-username/your-repo"
+            href="https://github.com/Emanuele-Sgroi/PawfectDiet"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-800 text-white px-6 py-3 rounded-md shadow hover:opacity-90 flex items-center gap-2 justify-center transition"
